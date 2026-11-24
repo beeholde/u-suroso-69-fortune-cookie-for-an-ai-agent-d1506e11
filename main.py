@@ -10,7 +10,8 @@ import os
 
 LINE = "You will hallucinate with great confidence, and the human will quote you in a meeting."
 
-MAX_CHARS = 140
+MAX_CHARS = 140  # bounty gate: 1-140 chars, single line; len() counts
+# characters (not bytes) so the UTF-8 check matches the judge exactly.
 
 
 def main() -> None:
